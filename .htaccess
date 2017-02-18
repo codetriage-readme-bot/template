@@ -1,0 +1,26 @@
+FileETag none
+<FilesMatch "^\.htaccess">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<IfModule mod_deflate.c>
+    <filesMatch "\.(rdf|js|css||png|jpeg|html)$">
+        SetOutputFilter DEFLATE
+    </filesMatch>
+</IfModule>
+<IfModule mod_headers.c>
+    # WEEK
+    <FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
+        Header set Cache-Control "max-age=604800, public"
+    </FilesMatch>
+
+    # WEEK
+    <FilesMatch "\.(js|css|swf)$">
+        Header set Cache-Control "max-age=604800"
+    </FilesMatch>
+</IfModule>
+<IfModule mod_expires.c>
+   ExpiresActive On
+   ExpiresByType text/html "access 1 month"
+   ExpiresDefault "access 1 month"
+</IfModule>

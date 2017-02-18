@@ -1,0 +1,31 @@
+# coffee file
+default:
+  description: 'Build porject whithout bootstrap' 
+  tasks:
+    - 'clean'
+    - 'processhtml:dist'
+    - 'concat:dist'
+    - 'uglify'
+    - 'imagemin'
+    - 'sprite'
+    - 'copyto:stuff'
+    - 'copy'
+    - 'sass'
+    - 'autoprefixer'
+    - 'cssmin'
+    # include libraries
+    - 'copyto:libs'
+    - 'concat:libsJs'
+    - 'cssmin:libs'
+    - 'concat:libsCss'
+dev:
+  tasks:
+    - 'clean'
+    - 'processhtml:dev'
+    - 'imagemin'
+    - 'sprite'
+    - 'copyto:stuff'
+    - 'copy'
+    - 'concat:dist'
+    - 'sass'
+    - 'watch'
