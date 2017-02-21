@@ -1,11 +1,11 @@
 module.exports = {	
     dev: {
 		files: {
-		  'index.html' : ['template/index.html']
+		  'index.html' : ['template/html/index.html']
 		}
     },
 
     dist: {
-    	files: {'index.html' : ['template/index.html']}
+    	files: {'index.html' : ['template/html/index.html']}
     }
 };

@@ -1,6 +1,16 @@
 module.exports = {
 	watch: {
-	    files: ['template/*.html', 'template/**/*/*.*'],
-	    tasks: ['sass:dist', 'concat:dist', 'processhtml:dev'],
+	    files: [
+	    	'template/*.html', 
+	    	'template/**/*/*.*', 
+	    	'!template/html/*.*'
+	    ],
+	    tasks: [
+	    	'sass:dist', 
+	    	'concat:dist', 
+	    	'pug', 
+	    	'html-prettyprinter', 
+	    	'processhtml:dev',
+	    ],
 	},
 };

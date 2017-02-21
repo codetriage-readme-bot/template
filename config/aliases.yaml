@@ -3,6 +3,8 @@ default:
   description: 'Build porject whithout bootstrap' 
   tasks:
     - 'clean'
+    - 'pug'
+    - 'html-prettyprinter'
     - 'processhtml:dist'
     - 'concat:dist'
     - 'uglify'
@@ -21,6 +23,8 @@ default:
 dev:
   tasks:
     - 'clean'
+    - 'pug'
+    - 'html-prettyprinter'
     - 'processhtml:dev'
     - 'imagemin'
     - 'sprite'
@@ -28,4 +32,5 @@ dev:
     - 'copy'
     - 'concat:dist'
     - 'sass'
+    - 'browserSync'
     - 'watch'

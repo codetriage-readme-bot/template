@@ -1,0 +1,90 @@
+/* ---------------------------- General Style -----------------------------*/
+/* var and mixins */
+/* Global style */
+* {
+  font-family: "GothamProBold";
+  color: #FFF; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  overflow-y: hidden; }
+
+html, body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  line-height: 1.5; }
+
+body {
+  position: relative; }
+
+h1, h2, h3, h4 {
+  margin-bottom: 0rem; }
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  line-height: 1.1; }
+
+h2 {
+  font-size: 2rem; }
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 1rem; }
+  ul li {
+    list-style-type: none; }
+
+p {
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+audio, cavas, iframe, img, svg, video {
+  vertical-align: middle; }
+
+textarea {
+  resize: none; }
+
+section {
+  position: relative; }
+
+input, select, button {
+  outline: none; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; }
+
+/* just header and footer styles */
+/* ------------------------ header -------------------------------- */
+/* ------------------------ footer -------------------------------- */
+/* styles */
+/* -----------------------------------  modal ----------------------------- */
+/* ------------------------  Section main_start -------------------------- */
+@media (min-width: 0px) and (max-width: 320px) {
+  .header {
+    color: red; } }

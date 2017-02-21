@@ -1,0 +1,17 @@
+body
+	include _header
+	include _section
+	include _footer
+	
+	= '\n'
+	<!-- build:remove:dev -->
+	script(src="assets/js/all.min.js")
+	<!-- /build -->
+	= '\n'
+	<!-- build:remove:dist --> 
+	script(src="libs/jquery/dist/jquery.min.js")
+	script(src="libs/bootstrap/dist/js/bootstrap.min.js")
+
+	script(src="assets/js/build.js")
+	= '\n'
+	<!-- /build -->

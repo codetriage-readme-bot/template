@@ -1,18 +1,11 @@
 $(document).ready(function(){
 
-
-	$( init );
-	function init() {
-		if(isMobile.any()){
-
-		}
+	if(isMobile.any()){
+		console.log('mobile');
 	}
 
 
 	if (document.body.clientWidth <= '992'){
-
-	}else{
-
+		console.log('992px');
 	}
-
 });
