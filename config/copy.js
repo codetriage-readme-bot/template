@@ -8,7 +8,7 @@ module.exports = {
   
   video: {
     expand: true,
-    cwd: 'template/video/',
+    cwd: 'template/media/video/',
     src: '**',
     dest: 'assets/video',
   }

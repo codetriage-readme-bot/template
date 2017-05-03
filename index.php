@@ -15,15 +15,7 @@
 		<noscript>
 			<link rel="stylesheet" href="assets/css/all.min.css">
 		</noscript>
-		<!-- /build -->
-		<!-- build:remove:dist -->
-		<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="libs/slick-carousel/slick/slick.css">
-		<link rel="stylesheet" href="assets/css/main.css">
-		<link rel="stylesheet" href="assets/css/sprites.css">
-		<link rel="stylesheet" href="assets/fonts/fonts.css">
-		<!-- /build -->
-	</head>
+		<!-- /build -->	</head>
 	<body>
 		<header>
 			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -81,12 +73,6 @@
 		</div>
 		<!-- build:remove:dev -->
 		<script async src="assets/js/all.min.js"></script>
-		<!-- /build -->
-		<!-- build:remove:dist -->
-		<script src="libs/jquery/dist/jquery.min.js"></script>
-		<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script src="assets/js/build.js"></script>
-		<!-- /build -->
-	</body>
+		<!-- /build -->	</body>
 
 </html>

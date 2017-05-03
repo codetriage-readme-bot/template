@@ -35,6 +35,7 @@
     "grunt-sass": "^2.0.0",
     "grunt-spritesmith": "^6.4.0",
     "grunt-svg-sprite": "^1.3.6",
+    "grunt-php": "^1.5.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-cache": "^0.4.5",
@@ -47,7 +48,17 @@
     "load-grunt-config": "^0.19.2",
     "load-grunt-tasks": "^3.5.2",
     "pug": "^2.0.0-beta11",
-    "time-grunt": "^1.1.0"
+    "time-grunt": "^1.1.0",
+    "webpack": "*",
+    "vue": "*",
+    "vue-loader": "*",
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-plugin-transform-runtime": "*",
+    "babel-preset-es2015": "*",
+    "css-loader": "*",
+    "vue-html-loader": "*",
+    "vue-style-loader": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
