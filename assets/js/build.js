@@ -18,6 +18,7 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 };
+
 $(document).ready(function(){
 
 	if(isMobile.any()){
@@ -28,7 +29,7 @@ $(document).ready(function(){
 	if (document.body.clientWidth <= '992'){
 		console.log('992px');
 	}
-	
+
 /* Ajax */
 
 	$("#form-proposal").submit(function() {
@@ -49,7 +50,7 @@ $(document).ready(function(){
 		if (!error) {
 			$.ajax({
 				type: "POST",
-				url: "http://192.168.1.34:5000/api/v1/user_token",
+				url: "http://192.168.1.34:5000/api/v1/tokens",
 				dataType: 'json',
 				contentType: "application/json; charset=utf-8",
 				/*data: $(this).serialize(),*/
@@ -76,9 +77,12 @@ $(document).ready(function(){
 });
 
 /* video slider autoplay */
-/*var video = $('#main-slider .slick-active').find('video').get(0).play();
+
+/*
+var video = $('#main-slider .slick-active').find('video').get(0).play();
 
 $('#main-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
 	$('#main-slider .slick-slide').find('video').get(0).pause();
 	var video = $('#main-slider .slick-active').find('video').get(0).play();
-});*/
+});
+*/

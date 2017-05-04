@@ -63,7 +63,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pug": "pug template/html/index.pug -P",
-    "pug:dev": "pug template/html/index.pug -P -w"
+    "pug:dev": "pug template/html/index.pug -P -w",
+    "build": ""
   },
   "author": "Mifrill",
   "license": "ISC",

@@ -2,7 +2,7 @@ module.exports = {
   stuff: {
     files: [
       {cwd: 'template/media/img/additional/', src: ['**/*'], dest: 'assets/img/additional/', expand: true},
-      {cwd: 'template/modules/', src: ['data.json'], dest: 'assets/js/', expand: true},
+      {cwd: 'template/media/', src: ['data.json'], dest: 'assets/js/', expand: true},
     ],
     options: {
       processContent: function(content, path) {

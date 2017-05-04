@@ -8,7 +8,7 @@ $(document).ready(function(){
 	if (document.body.clientWidth <= '992'){
 		console.log('992px');
 	}
-	
+
 /* Ajax */
 
 	$("#form-proposal").submit(function() {
@@ -29,7 +29,7 @@ $(document).ready(function(){
 		if (!error) {
 			$.ajax({
 				type: "POST",
-				url: "http://192.168.1.34:5000/api/v1/user_token",
+				url: "http://192.168.1.34:5000/api/v1/tokens",
 				dataType: 'json',
 				contentType: "application/json; charset=utf-8",
 				/*data: $(this).serialize(),*/
