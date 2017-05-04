@@ -1,24 +1,24 @@
 head
-	meta(charset="utf-8")
-	meta(name="viewport" content="width=device-width")
-	title pageTitle
-	= '\n'
-	<!-- build:remove:dev -->
-	script(type='text/javascript').
-		function loadCSS(hf) {
-			var ms=document.createElement("link");ms.rel="stylesheet";
-			ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
-		}
-		loadCSS("assets/css/all.min.css");
-	noscript
-		link(rel="stylesheet" href="assets/css/all.min.css")
-	= '\n'
-	<!-- /build -->
-	<!-- build:remove:dist -->
-	link(rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css")
-	link(rel="stylesheet" href="libs/slick-carousel/slick/slick.css")
-	link(rel="stylesheet" href="assets/css/main.css")
-	link(rel="stylesheet" href="assets/css/sprites.css")
-	link(rel="stylesheet" href="assets/fonts/fonts.css")
-	= '\n'
-	<!-- /build -->
+  meta(charset="utf-8")
+  meta(name="viewport" content="width=device-width")
+  title pageTitle
+  = '\n'
+  <!-- build:remove:dev -->
+  script(type='text/javascript').
+      function loadCSS(hf) {
+          var ms=document.createElement("link");ms.rel="stylesheet";
+          ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
+      }
+      loadCSS("assets/css/all.min.css");
+  noscript
+    link(rel="stylesheet" href="assets/css/all.min.css")
+  = '\n'
+  <!-- /build -->
+  <!-- build:remove:dist -->
+  link(rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css")
+  link(rel="stylesheet" href="libs/slick-carousel/slick/slick.css")
+  link(rel="stylesheet" href="assets/css/main.css")
+  link(rel="stylesheet" href="assets/css/sprites.css")
+  link(rel="stylesheet" href="assets/fonts/fonts.css")
+  = '\n'
+  <!-- /build -->

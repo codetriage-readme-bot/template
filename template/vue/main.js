@@ -4,6 +4,6 @@ var hello = require('vue!./components/hello.vue')
 new Vue({
     el: 'body',
     components: {
-    	hello: hello
+        hello: hello
     }
 })
