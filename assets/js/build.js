@@ -19,7 +19,30 @@ var isMobile = {
     }
 };
 
+/* correct pre-load images */
+$(function () {
+  $('img[data-src]').each(function () {
+    var image = $(this);
+
+    image.attr({
+      src: image.data('src')
+    }).removeAttr('data-src');
+
+    if (!image.get(0).complete) {
+      image.parent().addClass('loading');
+      image.bind('load', function () {
+        $(this).unbind('load').parent().removeClass('loading');
+      });
+    }
+  });
+});
+
 $(document).ready(function(){
+	new WOW().init();
+
+	$.getJSON('assets/data.json', {_: new Date().getTime()}, function(dataJs) {
+		/* use content from json file */
+	});
 
 	if(isMobile.any()){
 		console.log('mobile');
@@ -74,6 +97,26 @@ $(document).ready(function(){
 		}
 		return false;
 	});
+});
+
+new Vue({
+	el: "#app",
+	data: {
+		numbers: [
+			{
+				name: 'one',
+				status: false
+			},
+			{
+				name: 'two',
+				status: true
+			},
+			{
+				name: 'tree',
+				status: false
+			},
+		]
+	}
 });
 
 /* video slider autoplay */

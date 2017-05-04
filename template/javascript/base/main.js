@@ -1,4 +1,9 @@
 $(document).ready(function(){
+	new WOW().init();
+
+	$.getJSON('assets/data.json', {_: new Date().getTime()}, function(dataJs) {
+		/* use content from json file */
+	});
 
 	if(isMobile.any()){
 		console.log('mobile');

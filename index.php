@@ -3,14 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<title>pageTitle</title>		<!-- build:remove:dist -->
-		<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="libs/slick-carousel/slick/slick.css">
-		<link rel="stylesheet" href="assets/css/main.css">
-		<link rel="stylesheet" href="assets/css/sprites.css">
-		<link rel="stylesheet" href="assets/fonts/fonts.css">
-		<!-- /build -->
-	</head>
+		<title>pageTitle</title>
+		<!-- build:remove:dev -->
+		<script type="text/javascript">
+			function loadCSS(hf) {
+			      	var ms=document.createElement("link");ms.rel="stylesheet";
+			      	ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
+			      }
+			      loadCSS("assets/css/all.min.css");
+		</script>
+		<noscript>
+			<link rel="stylesheet" href="assets/css/all.min.css">
+		</noscript>
+		<!-- /build -->	</head>
 	<body>
 		<header>
 			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -41,6 +46,11 @@
 		</header>
 		<section>
 			<input type="checkbox" checked>
+			<div id="app">
+				<ul>
+					<li v-for="number in numbers" v-bind:class="{ 'strike': number.status }">{{ number.name }}</li>
+				</ul>
+			</div>
 		</section>
 		<footer>
 			<div id="content"></div>
@@ -65,11 +75,9 @@
 					</div>
 				</div>
 			</div>
-		</div>		<!-- build:remove:dist -->
-		<script src="libs/jquery/dist/jquery.min.js"></script>
-		<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script src="assets/js/build.js"></script>
-		<!-- /build -->
-	</body>
+		</div>
+		<!-- build:remove:dev -->
+		<script async src="assets/js/all.min.js"></script>
+		<!-- /build -->	</body>
 
 </html>

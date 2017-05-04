@@ -54,6 +54,11 @@
 		</header>
 		<section>
 			<input type="checkbox" checked>
+			<div id="app">
+				<ul>
+					<li v-for="number in numbers" v-bind:class="{ 'strike': number.status }">{{ number.name }}</li>
+				</ul>
+			</div>
 		</section>
 		<footer>
 			<div id="content"></div>
@@ -84,7 +89,11 @@
 		<!-- /build -->
 		<!-- build:remove:dist -->
 		<script src="libs/jquery/dist/jquery.min.js"></script>
+		<script src="libs/jquery-ui/jquery-ui.min.js"></script>
 		<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="libs/wow/dist/wow.min.js"></script>
+		<script src="libs/slick-carousel/slick/slick.min.js"></script>
+		<script src="node_modules/vue/dist/vue.min.js"></script>
 		<script src="assets/js/build.js"></script>
 		<!-- /build -->
 	</body>
