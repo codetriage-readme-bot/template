@@ -9,7 +9,7 @@
                 greeting: 'Hello World'
             }
         }
-    };
+    }
 </script>
 
 <style>

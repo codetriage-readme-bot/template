@@ -1,6 +1,13 @@
-section
-  input(type='checkbox' checked)
-  div(id="app")
-    .wrapper
-      ul
-        li(v-for="number in numbers" v-bind:class="{ 'strike': number.status }") {{ number.name }}
+section.grid-list
+  .container
+    #products.row.list-group
+      each val in [1, 2, 3]
+        +first-deco(val)
+    .row
+      .col-xs-12.col-sm-4
+        h1
+        div(id="app")
+      .col-xs-12.col-sm-4
+        h2 Something
+      .col-xs-12.col-sm-4
+        h3 Something

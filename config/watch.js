@@ -7,6 +7,7 @@ module.exports = {
     ],
     tasks: [
       'sass:dist', 
+      'browserify',
       'concat:dist', 
       'pug', 
       'html-prettyprinter', 
