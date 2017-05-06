@@ -1,8 +1,8 @@
 module.exports = {	
 	custom: {
-			src: 'template/html/index.html',
-			dest: 'template/html/index.html',
-			options: {
+		src: 'template/html/index.html',
+		dest: 'template/html/index.html',
+		options: {
 			indent_size: 1,
 			indent_char: '\t'
 		}

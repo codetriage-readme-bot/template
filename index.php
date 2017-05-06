@@ -24,7 +24,7 @@
 					</div>
 					<div class="collapse navbar-collapse">
 						<ul class="nav navbar-nav" id="scroll-menu">
-							<li><a href="#mission">One				</a>
+							<li><a href="#mission">One              </a>
 							</li>
 							<li><a href="#education">Two</a>
 							</li>
@@ -39,8 +39,83 @@
 				</div>
 			</div>
 		</header>
-		<section>
-			<input type="checkbox" checked>
+		<section class="grid-list">
+			<div class="container">
+				<div class="row list-group" id="products">
+					<div class="item col-xs-4 col-lg-4">
+						<div class="thumbnail">
+							<img class="group list-group-image" src="1.png" alt="1.png" />
+							<div class="caption">
+								 <h4 class="group inner list-group-item-heading"> Product title</h4>
+
+								<p class="group inner list-group-item-text">Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing
+									elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+									erat volutpat.</p>
+								<div class="row">
+									<div class="col-xs-12 col-md-6">
+										<p class="lead">$21.000</p>
+									</div>
+									<div class="col-xs-12 col-md-6"><a class="btn btn-success" href="#">Add to cart</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item col-xs-4 col-lg-4">
+						<div class="thumbnail">
+							<img class="group list-group-image" src="2.png" alt="2.png" />
+							<div class="caption">
+								 <h4 class="group inner list-group-item-heading"> Product title</h4>
+
+								<p class="group inner list-group-item-text">Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing
+									elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+									erat volutpat.</p>
+								<div class="row">
+									<div class="col-xs-12 col-md-6">
+										<p class="lead">$21.000</p>
+									</div>
+									<div class="col-xs-12 col-md-6"><a class="btn btn-success" href="#">Add to cart</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item col-xs-4 col-lg-4">
+						<div class="thumbnail">
+							<img class="group list-group-image" src="3.png" alt="3.png" />
+							<div class="caption">
+								 <h4 class="group inner list-group-item-heading"> Product title</h4>
+
+								<p class="group inner list-group-item-text">Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing
+									elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+									erat volutpat.</p>
+								<div class="row">
+									<div class="col-xs-12 col-md-6">
+										<p class="lead">$21.000</p>
+									</div>
+									<div class="col-xs-12 col-md-6"><a class="btn btn-success" href="#">Add to cart</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4">
+						 <h1></h1>
+
+						<div id="app"></div>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						 <h2>Something</h2>
+
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						 <h3>Something</h3>
+
+					</div>
+				</div>
+			</div>
 		</section>
 		<footer>
 			<div id="content"></div>
@@ -67,7 +142,10 @@
 			</div>
 		</div>		<!-- build:remove:dist -->
 		<script src="libs/jquery/dist/jquery.min.js"></script>
+		<script src="libs/jquery-ui/jquery-ui.min.js"></script>
 		<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="libs/wow/dist/wow.min.js"></script>
+		<script src="libs/slick-carousel/slick/slick.min.js"></script>
 		<script src="assets/js/build.js"></script>
 		<!-- /build -->
 	</body>

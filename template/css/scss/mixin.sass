@@ -1,46 +1,46 @@
 /* var and mixins */
-$color: #FFF
+$color: #CE8932
 
 
 =links($link, $visit, $hover, $active)
-	a
-		color: $link
-		&:visited
-			color: $visit
-		&:hover
-			color: $hover
-		&:active
-			color: $active
+   a
+      color: $link
+      &:visited
+         color: $visit
+      &:hover
+         color: $hover
+      &:active
+         color: $active
 =dn
-	display: none
+   display: none
 =df
-	display: flex
+   display: flex
 =fww
-	flex-wrap: wrap
+   flex-wrap: wrap
 =jcc
-	justify-content: center
+   justify-content: center
 =fdc
-	flex-direction: column
+   flex-direction: column
 =tc
-	text-align: center
+   text-align: center
 =pr
-	position: relative
+   position: relative
 =pa
-	position: absolute
+   position: absolute
 =tac
-	text-align: center
+   text-align: center
 =button-call($w, $h, $c, $f)
-	.button
-		button 
-			width: $w
-			height: $h
-			background-color: $color-green
-			border-radius: 10px
-			margin-bottom: 10px
-			color: $c
-			font-size: $f
-			font-weight: bold
-			border-width: 0px
-			&:active
-				border-width: 1px
-				border-color: $color-green
+   .button
+      button 
+         width: $w
+         height: $h
+         background-color: $color-green
+         border-radius: 10px
+         margin-bottom: 10px
+         color: $c
+         font-size: $f
+         font-weight: bold
+         border-width: 0px
+      &:active
+         border-width: 1px
+         border-color: $color-green

@@ -1,8 +1,8 @@
 module.exports = {
-	dev: {
-		options: {
-			port: 8010,
-			base: '.'
-		}
-	}
+  dev: {
+    options: {
+      port: 8010,
+      base: '.'
+    }
+  }
 };
