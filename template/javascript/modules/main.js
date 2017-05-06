@@ -8,3 +8,22 @@ $('#main-slider').on('afterChange', function(event, slick, currentSlide, nextSli
     var video = $('#main-slider .slick-active').find('video').get(0).play();
 });
 */
+new Vue({
+  el: "#app",
+  data: {
+    numbers: [
+      {
+        name: 'one',
+        status: false
+      },
+      {
+        name: 'two',
+        status: true
+      },
+      {
+        name: 'tree',
+        status: false
+      },
+    ]
+  }
+});
