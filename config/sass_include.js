@@ -2,11 +2,11 @@ module.exports = {
   styles: {
     options: {},
     files: {
-      'template/css/sass/import/styles.sass': ['template/css/sass/import/**/*.+(sass|scss)', '!template/css/sass/import/styles.sass']
+      'template/styles/sass/import/styles.sass': ['template/styles/sass/import/**/*.+(sass|scss)', '!template/styles/sass/import/styles.sass']
     },
   },
   medias: {
-    src: ['template/css/sass/media/**/*.sass', '!template/css/sass/media/medias.sass'],
-    dest: 'template/css/sass/media/medias.sass'
+    src: ['template/styles/sass/media/**/*.sass', '!template/styles/sass/media/medias.sass'],
+    dest: 'template/styles/sass/media/medias.sass'
   }
 };
