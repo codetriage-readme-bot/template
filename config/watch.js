@@ -7,6 +7,8 @@ module.exports = {
     ],
     tasks: [
       'sass:dist', 
+      'less_imports', 
+      'less', 
       'browserify',
       'concat:dist', 
       'pug', 

@@ -6,8 +6,10 @@
 		<title>pageTitle</title>		<!-- build:remove:dist -->
 		<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="libs/slick-carousel/slick/slick.css">
-		<link rel="stylesheet" href="assets/css/main.css">
-		<link rel="stylesheet" href="assets/css/sprites.css">
+		<link rel="stylesheet" href="libs/animate.css/animate.min.css">
+		<link rel="stylesheet" href="assets/css/src/sass.css">
+		<link rel="stylesheet" href="assets/css/src/less.css">
+		<link rel="stylesheet" href="assets/css/src/sprites.css">
 		<link rel="stylesheet" href="assets/fonts/fonts.css">
 		<!-- /build -->
 	</head>
@@ -44,7 +46,8 @@
 				<div class="row list-group" id="products">
 					<div class="item col-xs-4 col-lg-4">
 						<div class="thumbnail">
-							<img class="group list-group-image" src="1.png" alt="1.png" />
+							<img class="group list-group-image" src="assets/img/1.png" alt="1.png"
+							/>
 							<div class="caption">
 								 <h4 class="group inner list-group-item-heading"> Product title</h4>
 
@@ -63,7 +66,8 @@
 					</div>
 					<div class="item col-xs-4 col-lg-4">
 						<div class="thumbnail">
-							<img class="group list-group-image" src="2.png" alt="2.png" />
+							<img class="group list-group-image" src="assets/img/2.png" alt="2.png"
+							/>
 							<div class="caption">
 								 <h4 class="group inner list-group-item-heading"> Product title</h4>
 
@@ -82,7 +86,8 @@
 					</div>
 					<div class="item col-xs-4 col-lg-4">
 						<div class="thumbnail">
-							<img class="group list-group-image" src="3.png" alt="3.png" />
+							<img class="group list-group-image" src="assets/img/3.png" alt="3.png"
+							/>
 							<div class="caption">
 								 <h4 class="group inner list-group-item-heading"> Product title</h4>
 

@@ -14,6 +14,8 @@ default:
     - 'copyto:stuff'
     - 'copy'
     - 'sass'
+    - 'less_imports'
+    - 'less'
     - 'autoprefixer'
     - 'cssmin'
     # include libraries
@@ -34,6 +36,8 @@ dev:
     - 'browserify'
     - 'concat:dist'
     - 'sass'
+    - 'less_imports'
+    - 'less'
     - 'php'
     - 'browserSync'
     - 'watch'
