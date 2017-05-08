@@ -1,7 +1,7 @@
 module.exports = {  
   dist: {
     files: {
-      'assets/css/main.css' : 'template/css/scss/main.sass'
+      'assets/css/src/sass.css' : 'template/css/sass/main.sass'
     }
   },
 };
