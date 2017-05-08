@@ -6,6 +6,7 @@ module.exports = {
       '!template/html/*.*'
     ],
     tasks: [
+      'sass_include',
       'sass:dist', 
       'less_imports', 
       'less', 
