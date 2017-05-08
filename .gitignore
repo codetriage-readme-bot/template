@@ -1,5 +1,6 @@
 # packs
 node_modules/*
 libs/*
-assets/*
 .sass-cache
+assets/*
+./index.php
