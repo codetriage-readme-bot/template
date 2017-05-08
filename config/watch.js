@@ -11,6 +11,7 @@ module.exports = {
       'less', 
       'sass_include',
       'sass:dist', 
+      'stylus',
       'browserify',
       'concat:dist', 
       'pug', 
