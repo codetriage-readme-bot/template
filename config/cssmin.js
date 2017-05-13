@@ -10,7 +10,7 @@ module.exports = {
   /* if necessary */
   libs: {
     files: {
-      'assets/css/libs.min.css' : ['assets/css/libs/*.css']
+      'assets/css/libs.min.css' : ['assets/css/src/libs/*.css']
     }
   }
 }
