@@ -23,7 +23,7 @@ module.exports = {
   },
   libsCss: {
     src: [
-      'assets/css/*.min.css'
+      'assets/css/*.min.css',
     ],
     dest: 'assets/css/all.min.css'
   }

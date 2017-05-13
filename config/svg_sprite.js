@@ -3,12 +3,12 @@ module.exports = {
     expand: true,
     cwd: 'template/media/img/sprite/svg',
     src: ['**/*.svg'],
-    dest: 'assets/css',
-    options       : {
-      mode      : {
-        view     : {
-          render  : {
-            css : true
+    dest: 'assets',
+    options: {
+      mode: {
+        css: {
+          render: {
+            css: true
           }
         }
       }

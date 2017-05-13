@@ -40,7 +40,6 @@
     "grunt-contrib-uglify": "^2.3.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-copy-to": "0.0.12",
-    "grunt-css-url-replace": "^0.2.7",
     "grunt-cssjoin": "^0.3.0",
     "grunt-html-prettyprinter": "^1.5.0",
     "grunt-less-imports": "^1.2.2",

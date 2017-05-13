@@ -34,7 +34,7 @@ $(document).ready(function(){
     if (!error) {
       $.ajax({
         type: "POST",
-        url: "https://railgunner.herokuapp.com/api/v1/tokens",
+        url: "http://192.168.1.34:5000/api/v1/tokens",
         dataType: 'json',
         contentType: "application/json; charset=utf-8",
         /*data: $(this).serialize(),*/

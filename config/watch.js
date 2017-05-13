@@ -6,6 +6,9 @@ module.exports = {
       '!template/html/*.*'
     ],
     tasks: [
+      'pug', 
+      'html-prettyprinter', 
+      'processhtml:dev',
       'cssjoin',
       'less_imports', 
       'less', 
@@ -14,9 +17,6 @@ module.exports = {
       'stylus',
       'browserify',
       'concat:dist', 
-      'pug', 
-      'html-prettyprinter', 
-      'processhtml:dev',
       'copyto:stuff',
     ],
   },
