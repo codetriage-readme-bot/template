@@ -11,6 +11,7 @@ default:
     - 'uglify'
     - 'imagemin'
     - 'sprite'
+    - 'svg_sprite'
     - 'cssjoin'
     - 'copyto:stuff'
     - 'copy'
