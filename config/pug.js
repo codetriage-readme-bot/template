@@ -7,6 +7,12 @@ module.exports = {
       
       pretty: {
         type: true
+      },
+
+      filters: {
+        php: function (text, attrs, ast) {
+          return '<?php ' + text + ' ?>';
+        }
       }
     },
 
