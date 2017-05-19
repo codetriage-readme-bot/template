@@ -23,7 +23,8 @@ default:
     - 'autoprefixer'
     - 'cssmin:banner'
     # include libraries
-    - 'copyto:libs'
+    - 'wiredep'
+    #- 'copyto:libs'
     - 'concat:libsJs'
     - 'cssmin:libs'
     - 'concat:libsCss'
