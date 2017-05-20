@@ -8,6 +8,7 @@ module.exports = {
     tasks: [
       'pug', 
       'html-prettyprinter', 
+      'wiredep:development',
       'processhtml:dev',
       'cssjoin',
       'less_imports', 

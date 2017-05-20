@@ -1,7 +1,7 @@
 module.exports = {
   development: {
     src: [
-      'index.php'
+      'template/html/index.html'
     ],
     options: {
       devDependencies: true,
