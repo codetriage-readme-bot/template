@@ -1,17 +1,16 @@
 module.exports = {
-  task: {
-    // Point to the files that should be updated when
-    // you run `grunt wiredep`
+  development: {
     src: [
-      'index.php'   // .html support...
-      //'app/views/**/*.jade',   // .jade support...
-      //'app/styles/main.scss',  // .scss & .sass support...
-      //'app/config.yml'         // and .yml & .yaml support out of the box!
+      'index.php'
     ],
     options: {
-      // See wiredep's configuration documentation for the options
-      // you may pass:
-      // https://github.com/taptapship/wiredep#configuration
+      devDependencies: true,
     }
+  },
+  production: {
+    src: [
+      'config/cssmin.js',
+      'config/uglify.js'
+    ],
   }
 };
