@@ -23,8 +23,7 @@ default:
     - 'autoprefixer'
     - 'cssmin:banner'
     # include libraries
-    - 'wiredep'
-    #- 'copyto:libs'
+    - 'copyto:libs'
     - 'concat:libsJs'
     - 'cssmin:libs'
     - 'concat:libsCss'
@@ -34,6 +33,7 @@ dev:
     - 'pug'
     - 'html-prettyprinter'
     - 'processhtml:dev'
+    - 'wiredep'
     - 'imagemin'
     - 'sprite'
     - 'svg_sprite'
