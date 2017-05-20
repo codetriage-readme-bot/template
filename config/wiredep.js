@@ -9,8 +9,9 @@ module.exports = {
   },
   production: {
     src: [
+    /* if ignore some library files add "main":["*.css", "*.js"] >> libsPath/bower.json */
       'config/cssmin.js',
-      'config/uglify.js'
+      'config/concat.js'
     ],
   }
 };

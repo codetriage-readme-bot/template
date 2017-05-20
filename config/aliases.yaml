@@ -15,7 +15,7 @@ default:
     - 'copy'
     - 'browserify'
     - 'concat:dist'
-    - 'uglify'
+    - 'uglify:build'
     - 'less_imports'
     - 'less'
     - 'sass_include'
@@ -23,9 +23,10 @@ default:
     - 'stylus'
     - 'autoprefixer'
     - 'cssmin:banner'
-    # include libraries
-    #- 'copyto:libs'
+    - 'string-replace'
     - 'concat:libsJs'
+    - 'uglify:libs'
+    - 'concat:allJs'
     - 'cssmin:libs'
     - 'concat:libsCss'
 dev:
