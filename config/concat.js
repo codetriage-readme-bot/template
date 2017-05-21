@@ -9,22 +9,24 @@ module.exports = {
   },
   libsJs: {
     src: [
-      /* important sequence */
-      'assets/js/jquery.min.js',
-      'assets/js/jquery-ui.min.js',
-      'assets/js/bootstrap.min.js',
-      'assets/js/wow.min.js',
-      'assets/js/slick.min.js',
-      
-      /* custom js */
-      'assets/js/build.min.js'
+      // bower:js
+      'libs/jquery/dist/jquery.js',
+      'libs/bootstrap/dist/js/bootstrap.js',
+      'libs/slick-carousel/slick/slick.js',
+      'libs/jquery-ui/jquery-ui.js',
+      'libs/wow/dist/wow.js',
+      // endbower
     ],
-    dest: 'assets/js/all.min.js'
+    dest: 'assets/js/libs.js'
   },
   libsCss: {
     src: [
       'assets/css/*.min.css',
     ],
     dest: 'assets/css/all.min.css'
+  },
+  allJs: {
+    src: ['assets/js/libs.min.js', 'assets/js/build.min.js'],
+    dest: 'assets/js/all.min.js'
   }
 };
