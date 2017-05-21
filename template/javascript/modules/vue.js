@@ -7493,16 +7493,16 @@ exports.insert = function (css) {
 }
 
 },{}],5:[function(require,module,exports){
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("h1 {\n    color: green;\n}")
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("h1 {\n  color: green;\n}")
 ;(function(){
 'use strict';
 
 module.exports = {
-    data: function data() {
-        return {
-            greeting: 'Hello World'
-        };
-    }
+  data: function data() {
+    return {
+      greeting: 'Hello World'
+    };
+  }
 };
 })()
 if (module.exports.__esModule) module.exports = module.exports.default
