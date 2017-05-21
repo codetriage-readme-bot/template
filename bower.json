@@ -21,7 +21,8 @@
     "slick-carousel": "^1.6.0",
     "jquery-ui": "jqueryui#^1.12.1",
     "wow": "^1.1.2",
-    "animate.css": "animate-css#^3.5.2"
+    "animate.css": "animate-css#^3.5.2",
+    "moment": "^2.18.1"
   },
   "devDependencies": {
     "sugar": "^2.0.4",
