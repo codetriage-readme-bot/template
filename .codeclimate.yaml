@@ -1,0 +1,32 @@
+---
+engines:
+  duplication:
+    enabled: true
+    exclude_paths:
+    - "template/javascript/modules/vue.js"
+    - "template/media/**/*.*"
+    - "**/*.html"
+    config:
+      languages:
+      - php
+      - javascript
+      - pug
+      - sass
+      - less
+      - stylus
+  fixme:
+    enabled: true
+  phpmd:
+    enabled: true
+    checks:
+      UnusedFormalParameter:
+        enabled: false
+      Design/TooManyPublicMethods:
+        enabled: false
+ratings:
+  paths:
+  - "**.php"
+  - "**.js"
+  - "**.pug"
+  - "**.pug"
+  - "**/styles"
