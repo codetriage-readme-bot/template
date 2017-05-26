@@ -10,5 +10,11 @@ ratings:
   - "**.php"
   - "**.js"
   - "**.pug"
-  - "**.pug"
   - "**/styles"
+engines:
+  rubocop:
+    enabled: true
+  eslint:
+    enabled: false
+  csslint:
+    enabled: true
