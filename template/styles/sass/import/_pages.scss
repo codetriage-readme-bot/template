@@ -95,3 +95,19 @@ input, select, button {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+a#back-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: none;
+  overflow: hidden;
+  width: 27px;
+  height: 27px;
+  background: url("../img/basic/scroll_top_button.png") left top no-repeat;
+  text-decoration: none;
+  text-indent: -99999px;
+}
+a:hover#back-to-top {
+  background-position: left bottom;
+}
