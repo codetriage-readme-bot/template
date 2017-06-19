@@ -1,10 +1,8 @@
 module.exports = {  
-  dev: {
-    files: {
-      'index.php' : ['template/html/index.html']
-    }
+  development: {
+    cwd: 'template/html/', src: ['*.html'], dest: './', ext: ".php", expand: true
   },
-  dist: {
-    files: {'index.php' : ['template/html/index.html']}
+  production: {
+    cwd: 'template/html/', src: ['*.html'], dest: './', ext: ".php", expand: true
   }
 };

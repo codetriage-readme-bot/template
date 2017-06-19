@@ -4,8 +4,8 @@ default:
   tasks:
     - 'clean'
     - 'pug'
-    - 'html-prettyprinter'
-    - 'processhtml:dist'
+    - 'html-prettyprinter-dir'
+    - 'processhtml:production'
     - 'wiredep:production'
     - 'imagemin'
     - 'sprite'
@@ -33,9 +33,9 @@ dev:
   tasks:
     - 'clean'
     - 'pug'
-    - 'html-prettyprinter'
+    - 'html-prettyprinter-dir'
     - 'wiredep:development'
-    - 'processhtml:dev'
+    - 'processhtml:development'
     - 'imagemin'
     - 'sprite'
     - 'svg_sprite'

@@ -15,9 +15,13 @@ module.exports = {
         }
       }
     },
-
-    files: {
-      'template/html/index.html': ['template/html/index.pug']
-    }
+    files: [
+      {
+        src: "template/html/*.pug",
+        dest: "./",
+        expand: true,
+        ext: ".html"
+      } 
+    ]
   }
 };
