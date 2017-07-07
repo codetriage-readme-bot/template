@@ -4,7 +4,7 @@ module.exports = {
       expand: true,
       cwd: 'template/media/img/',
       src: ['**/*.{png,jpg,gif}', '!sprite/**/*'],
-      dest: 'assets/img/' 
+      dest: 'assets/img/'
     }]
   }
-}
+};

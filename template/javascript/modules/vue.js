@@ -169,6 +169,10 @@ process.off = noop;
 process.removeListener = noop;
 process.removeAllListeners = noop;
 process.emit = noop;
+process.prependListener = noop;
+process.prependOnceListener = noop;
+
+process.listeners = function (name) { return [] }
 
 process.binding = function (name) {
     throw new Error('process.binding is not supported');
@@ -7517,9 +7521,9 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   module.hot.accept()
   module.hot.dispose(__vueify_style_dispose__)
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5e062bce", __vue__options__)
+    hotAPI.createRecord("data-v-5f1d64c5", __vue__options__)
   } else {
-    hotAPI.reload("data-v-5e062bce", __vue__options__)
+    hotAPI.reload("data-v-5f1d64c5", __vue__options__)
   }
 })()}
 },{"vue":3,"vue-hot-reload-api":2,"vueify/lib/insert-css":4}],6:[function(require,module,exports){
