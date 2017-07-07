@@ -4,3 +4,4 @@ libs/*
 .sass-cache
 assets/*
 *.php
+.idea
