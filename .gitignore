@@ -1,7 +1,7 @@
 # packs
-node_modules/*
-libs/*
+node_modules
+libs
 .sass-cache
-assets/*
+assets
 *.php
 .idea
