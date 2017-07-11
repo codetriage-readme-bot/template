@@ -20,6 +20,16 @@ module.exports = {
   devtool: NODE_ENV == 'development' ? "cheap-module-eval-source-map" : "source-map",
 
 	plugins: [
-    new webpack.NodeEnvironmentPlugin('NODE_ENV')
-	]
+    new webpack.DefinePlugin({
+			NODE_ENV: JSON.stringify(NODE_ENV),
+      LANG: JSON.stringify('en')
+		})
+	],
+
+  module: {
+    loaders: [{
+      test: /\.js$/,
+      loader: 'babel'
+    }]
+  }
 };

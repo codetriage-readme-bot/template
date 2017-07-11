@@ -1,6 +1,6 @@
 sudo: required
 dist: trusty
-language: node_js, php
+language: node_js
 notifications:
   email: false
 node_js:
@@ -13,4 +13,6 @@ script:
   - npm run coveragenyc
 php:
   - '7.0'
-  - '7.1'
+before_script: composer install
+script:
+  php phpunit.phar
