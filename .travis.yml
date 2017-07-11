@@ -1,3 +1,5 @@
+sudo: required
+dist: trusty
 language: node_js
 notifications:
   email: false
@@ -6,5 +8,9 @@ node_js:
 services: mongodb
 env:
   - NODE_PATH=.
+  - NODE_ENV=test
 script:
   - npm run coveragenyc
+php:
+  - '7.0'
+  - '7.1'
