@@ -1,0 +1,10 @@
+language: node_js
+notifications:
+  email: false
+node_js:
+  - 8.0.0
+services: mongodb
+env:
+  - NODE_PATH=.
+script:
+  - npm run coveragenyc
