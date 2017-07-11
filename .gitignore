@@ -5,3 +5,5 @@ libs
 assets
 *.php
 .idea
+coverage
+.nyc_output
