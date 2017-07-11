@@ -7,3 +7,4 @@ assets
 .idea
 coverage
 .nyc_output
+/vendor/
