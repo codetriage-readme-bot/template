@@ -2,6 +2,7 @@ exclude_paths:
   - "template/javascript/modules/vue.js"
   - "template/media/**/*.*"
   - "**/*.html"
+  - "phpunit.phar"
 languages:
   PHP: true
   javascript: true

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <phpunit colors="true">
   <testsuite>
-    <directory>tests</directory>
+    <directory>spec</directory>
   </testsuite>
   <logging>
     <log type="coverage-html" target="./log/report" charset="UTF-8"
