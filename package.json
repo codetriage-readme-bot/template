@@ -6,7 +6,8 @@
     "pug": "pug template/html/index.pug -P",
     "pug:dev": "pug template/html/index.pug -P -w",
     "build": "browserify -t vueify -e template/vue/main.js -o template/javascript/modules/vue.js ",
-    "start": "NODE_ENV=production node webpack",
+    "start": "NODE_ENV=production webpack",
+    "start:dev": "NODE_ENV=development webpack",
     "coveragenyc": "nyc --check-coverage --lines 100  --timeout 15000 npm run coverage",
     "lint": "eslint *.js tests",
     "test": "NODE_ENV=test mocha --compilers js:babel-register",
@@ -19,12 +20,9 @@
   "description": "Frontend template",
   "dependencies": {
     "async": "^1.5.2",
-    "babel-core": "^6.25.0",
-    "babel-loader": "^7.0.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-register": "^6.11.6",
-    "babel-runtime": "^6.23.0",
     "bowerder": "^0.7.5",
     "browser-sync": "^2.18.12",
     "browserify": "^14.4.0",
@@ -92,7 +90,6 @@
     "wiredep": "^4.0.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
     "casperjs": "^1.1.4",
     "chai": "^3.2.0",
     "eslint": "^2.9.0",

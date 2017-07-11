@@ -17,9 +17,9 @@ module.exports = {
     aggregateTimeout: 100
   },
 
-  devtool: NODE_ENV == 'development' ? "cheap-module-eval-source-map" :"source-map",
+  devtool: NODE_ENV == 'development' ? "cheap-module-eval-source-map" : "source-map",
 
 	plugins: [
-
+    new webpack.NodeEnvironmentPlugin('NODE_ENV')
 	]
 };
