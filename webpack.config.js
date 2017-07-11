@@ -26,10 +26,22 @@ module.exports = {
 		})
 	],
 
-  module: {
+	module: {
     loaders: [{
       test: /\.js$/,
-      loader: 'babel'
+      loader: 'babel-loader'
     }]
   }
 };
+
+if (NODE_ENV == 'production') {
+  module.exports.plugins.push(
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false,
+        drop_console: true,
+        unsafe: true
+      }
+    })
+  );
+}
