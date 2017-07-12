@@ -2,11 +2,6 @@ sudo: required
 dist: trusty
 notifications:
   email: false
-env:
-  global:
-    - PHP_BUILD_EXTRA_MAKE_ARGUMENTS="-j2"
-  matrix:
-    - DEFINITION=7.0.21
 language: node_js
 node_js:
   - 8.0.0
@@ -14,7 +9,9 @@ services: mongodb
 env:
   - NODE_PATH=.
   - NODE_ENV=test
+before_script:
+  - phpenv global 7
+  - composer install
 script:
   - npm run coveragenyc
-script:
-  php phpunit.phar
+  - php phpunit.phar
