@@ -10,12 +10,12 @@ module.exports = {
   libsJs: {
     src: [
       // bower:js
-      '../libs/jquery/dist/jquery.js',
-      '../libs/bootstrap/dist/js/bootstrap.js',
-      '../libs/slick-carousel/slick/slick.js',
-      '../libs/jquery-ui/jquery-ui.js',
-      '../libs/wow/dist/wow.js',
-      '../libs/moment/moment.js',
+      'libs/jquery/dist/jquery.js',
+      'libs/bootstrap/dist/js/bootstrap.js',
+      'libs/slick-carousel/slick/slick.js',
+      'libs/jquery-ui/jquery-ui.js',
+      'libs/wow/dist/wow.js',
+      'libs/moment/moment.js',
       // endbower
     ],
     dest: 'assets/js/libs.js'

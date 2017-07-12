@@ -2,7 +2,7 @@ module.exports = {
   styles: {
     options: {},
     files: {
-      'template/styles/sass/import/styles.sass': [
+      'frontend/styles/sass/import/styles.sass': [
         'frontend/styles/sass/import/**/*.+(sass|scss)',
         '!frontend/styles/sass/import/styles.sass'
       ]
