@@ -3,8 +3,7 @@ module.exports = {
     bsFiles: {
       src : [
           'assets/*.*',
-          'libs/**/*.*',
-          './*.php'
+          'libs/**/*.*'
       ]
     },
     options: {

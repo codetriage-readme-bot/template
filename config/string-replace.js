@@ -3,7 +3,10 @@ module.exports = {
     files: [{
       expand: true,
       cwd: 'config/',
-      src: ['cssmin.js', 'concat.js'],
+      src: [
+        'cssmin.js',
+        'concat.js'
+      ],
       dest: 'config/'
     }],
     options: {

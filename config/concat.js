@@ -27,7 +27,10 @@ module.exports = {
     dest: 'assets/css/all.min.css'
   },
   allJs: {
-    src: ['assets/js/libs.min.js', 'assets/js/build.min.js'],
+    src: [
+      'assets/js/libs.min.js',
+      'assets/js/build.min.js'
+    ],
     dest: 'assets/js/all.min.js'
   }
 };
