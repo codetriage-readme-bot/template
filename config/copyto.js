@@ -2,18 +2,18 @@ module.exports = {
   stuff: {
     files: [
       {
-        cwd: 'template/media/img/additional/',
+        cwd: 'frontend/media/img/additional/',
         src: ['**/*'],
         dest: 'assets/img/additional/',
         expand: true
       },
       {
-        cwd: 'template/media/',
+        cwd: 'frontend/media/',
         src: ['data.json'],
         dest: 'assets/',
         expand: true},
       {
-        cwd: 'template/styles/css',
+        cwd: 'frontend/styles/css',
         src: ['all.css'],
         dest: 'assets/css/src/',
         expand: true},

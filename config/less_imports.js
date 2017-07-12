@@ -4,16 +4,16 @@ module.exports = {
   },
   styles: {
     src: [
-      'template/styles/less/import/**/*.less',
-      '!template/styles/less/import/styles.less'
+      'frontend/styles/less/import/**/*.less',
+      '!frontend/styles/less/import/styles.less'
     ],
-    dest: 'template/styles/less/import/styles.less'
+    dest: 'frontend/styles/less/import/styles.less'
   },
   medias: {
     src: [
-      'template/styles/less/media/**/*.less',
-      '!template/styles/less/media/medias.less'
+      'frontend/styles/less/media/**/*.less',
+      '!frontend/styles/less/media/medias.less'
     ],
-    dest: 'template/styles/less/media/medias.less'
+    dest: 'frontend/styles/less/media/medias.less'
   }
 };

@@ -1,21 +1,21 @@
 module.exports = {
   dist: {
     src: [
-      'template/javascript/pages/*.js',
-      'template/javascript/base/*.js', 
-      'template/javascript/modules/*.js', 
+      'frontend/javascript/pages/*.js',
+      'frontend/javascript/base/*.js',
+      'frontend/javascript/modules/*.js',
     ],
     dest: 'assets/js/build.js'
   },
   libsJs: {
     src: [
       // bower:js
-      'libs/jquery/dist/jquery.js',
-      'libs/bootstrap/dist/js/bootstrap.js',
-      'libs/slick-carousel/slick/slick.js',
-      'libs/jquery-ui/jquery-ui.js',
-      'libs/wow/dist/wow.js',
-      'libs/moment/moment.js',
+      '../libs/jquery/dist/jquery.js',
+      '../libs/bootstrap/dist/js/bootstrap.js',
+      '../libs/slick-carousel/slick/slick.js',
+      '../libs/jquery-ui/jquery-ui.js',
+      '../libs/wow/dist/wow.js',
+      '../libs/moment/moment.js',
       // endbower
     ],
     dest: 'assets/js/libs.js'

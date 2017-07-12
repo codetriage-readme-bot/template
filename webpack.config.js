@@ -4,7 +4,7 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
 
 module.exports = {
-  entry: "./template/javascript/home",
+  entry: "./frontend/javascript/home",
   output: {
     path: __dirname + "/assets",
     filename: "build.js",

@@ -17,7 +17,7 @@ module.exports = {
     },
     files: [
       {
-        src: "template/html/*.pug",
+        src: "frontend/html/*.pug",
         dest: "./",
         expand: true,
         ext: ".html"

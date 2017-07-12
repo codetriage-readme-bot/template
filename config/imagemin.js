@@ -2,7 +2,7 @@ module.exports = {
   dynamic: {
     files: [{
       expand: true,
-      cwd: 'template/media/img',
+      cwd: 'frontend/media/img',
       src: [
         '**/*.{png,jpg,gif}',
         '!sprite/**/*'

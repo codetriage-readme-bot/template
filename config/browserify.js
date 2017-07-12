@@ -3,8 +3,8 @@ module.exports = {
     files: {
       'template/javascript/modules/vue.js':
         [
-          'template/javascript/vue/main.js',
-          'template/javascript/vue/**/*.coffee'
+          'frontend/javascript/vue/main.js',
+          'frontend/javascript/vue/**/*.coffee'
         ]
     },
     options: {

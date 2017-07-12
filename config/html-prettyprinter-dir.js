@@ -1,9 +1,9 @@
 module.exports = {  
   custom: {
     src: [
-      'template/html/*.html'
+      'frontend/html/*.html'
     ],
-    dest: 'template/html/',
+    dest: 'frontend/html/',
     options: {
       indent_size: 1,
     }

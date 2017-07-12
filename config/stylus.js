@@ -9,7 +9,7 @@ module.exports = {
       ]
     },
     files: {
-      'assets/css/src/stylus.css' : 'template/styles/stylus/main.styl',
+      'assets/css/src/stylus.css' : 'frontend/styles/stylus/main.styl',
     }
   }
 };

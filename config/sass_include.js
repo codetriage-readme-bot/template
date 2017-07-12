@@ -3,16 +3,16 @@ module.exports = {
     options: {},
     files: {
       'template/styles/sass/import/styles.sass': [
-        'template/styles/sass/import/**/*.+(sass|scss)',
-        '!template/styles/sass/import/styles.sass'
+        'frontend/styles/sass/import/**/*.+(sass|scss)',
+        '!frontend/styles/sass/import/styles.sass'
       ]
     },
   },
   medias: {
     src: [
-      'template/styles/sass/media/**/*.sass',
-      '!template/styles/sass/media/medias.sass'
+      'frontend/styles/sass/media/**/*.sass',
+      '!frontend/styles/sass/media/medias.sass'
     ],
-    dest: 'template/styles/sass/media/medias.sass'
+    dest: 'frontend/styles/sass/media/medias.sass'
   }
 };
