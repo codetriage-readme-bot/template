@@ -5,12 +5,15 @@ notifications:
 language: node_js
 node_js:
   - 8.0.0
+language: php
+node_js:
+  - 7.0.4
 services: mongodb
 env:
   - NODE_PATH=.
   - NODE_ENV=test
 before_script:
-  - phpenv global 7
+  - phpenv global 7.0.4
   - composer install
 script:
   - npm run coveragenyc
