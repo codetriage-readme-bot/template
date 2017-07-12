@@ -16,3 +16,4 @@ before_script:
   - composer install
 script:
   - npm run coveragenyc
+  - phpunit --configuration phpunit.xml
