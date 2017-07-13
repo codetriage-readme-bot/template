@@ -8,3 +8,4 @@ assets
 coverage
 .nyc_output
 /vendor/
+public

@@ -1,1 +1,0 @@
-var about=webpackJsonp_name_([1],[,function(e,t,u){"use strict";var a=u(0),n=function(e){return e&&e.__esModule?e:{default:e}}(a);(0,n.default)("home"),t.welcome=n.default}],[1]);

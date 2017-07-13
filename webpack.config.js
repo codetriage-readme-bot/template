@@ -7,15 +7,18 @@ module.exports = {
 	context: __dirname + '/frontend/javascript',
 
 	entry: {
-		home: "./home",
+/*		home: "./home",
 		about: "./about",
-    common: './common'
+    common: './common',*/
+    app: './app'
   },
 
   output: {
     path: __dirname + "/public",
-    filename: "[name].js",
-    library: "[name]"
+    publicPath: '/',
+    filename: '[name].js',
+    library: '[name]',
+		chunkFilename: '[id].[name].js'
   },
 
   watch: NODE_ENV == 'development',
@@ -27,15 +30,15 @@ module.exports = {
   devtool: NODE_ENV == 'development' ? "cheap-module-eval-source-map" : "source-map",
 
 	plugins: [
-	  new webpack.NoErrorsPlugin(),
+	  new webpack.NoEmitOnErrorsPlugin(),
     new webpack.DefinePlugin({
 			NODE_ENV: JSON.stringify(NODE_ENV),
       LANG: JSON.stringify('en')
 		}),
-    new webpack.optimize.CommonsChunkPlugin({
+/*    new webpack.optimize.CommonsChunkPlugin({
       name: "common",
-      minChunks : 2 /* number of modules used at assembly points */
-    })
+      minChunks : 2 /!* number of modules used at assembly points *!/
+    })*/
 	],
 
 	module: {
@@ -46,7 +49,7 @@ module.exports = {
   }
 };
 
-if (NODE_ENV == 'production') {
+/*if (NODE_ENV == 'production') {
   module.exports.plugins.push(
     new webpack.optimize.UglifyJsPlugin({
       compress: {
@@ -56,4 +59,4 @@ if (NODE_ENV == 'production') {
       }
     })
   );
-}
+}*/

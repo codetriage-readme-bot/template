@@ -6,6 +6,6 @@ export default function(message) {
 			console.log(message);
 	}
 
-	debugger;
+	/*debugger;*/
   alert(`Welcome ${message}`);
 }
