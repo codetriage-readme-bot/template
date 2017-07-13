@@ -6,6 +6,10 @@ const webpack = require('webpack');
 module.exports = {
 	context: __dirname + '/frontend/javascript',
 
+/*	resolve: {
+		root: __dirname + '/vendor'
+	},*/
+
 	entry: {
 /*		home: "./home",
 		about: "./about",
@@ -30,6 +34,10 @@ module.exports = {
   devtool: NODE_ENV == 'development' ? "cheap-module-eval-source-map" : "source-map",
 
 	plugins: [
+/*	  new webpack.ProvidePlugin({
+			$: "jquery",
+			_: 'lodash'
+		}),*/
 	  new webpack.NoEmitOnErrorsPlugin(),
     new webpack.DefinePlugin({
 			NODE_ENV: JSON.stringify(NODE_ENV),
@@ -44,9 +52,20 @@ module.exports = {
 	module: {
     loaders: [{
       test: /\.js$/,
+			/*exclude: /\/node_modules\//,*/
+			include: __dirname + '/frontend',
       loader: 'babel-loader'
-    }]
-  }
+    }],
+/* /\/node_modules\/(angular\/angular|jquery|...)/ */
+		noParse: wrapRegexp(/angular\/angular.js/, 'noParse')
+  },
+
+	/* CDN require libs*/
+/*	externals: {
+		lodash: "_"
+	}
+*/
+
 };
 
 /*if (NODE_ENV == 'production') {
@@ -60,3 +79,11 @@ module.exports = {
     })
   );
 }*/
+
+function wrapRegexp(regexp, label) {
+	regexp.test = function(path) {
+		console.log(label, path);
+		return RegExp.prototype.test.call(this, path);
+	};
+	return regexp;
+}
