@@ -4,7 +4,7 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
 
 module.exports = {
-	context: __dirname + '/frontend/javascript',
+	context: __dirname + '/frontend',
 
 /*	resolve: {
 		root: __dirname + '/vendor'
@@ -14,7 +14,8 @@ module.exports = {
 /*		home: "./home",
 		about: "./about",
     common: './common',*/
-    app: './app'
+		menu: './components/main',
+    app: './javascript/app'
   },
 
   output: {
@@ -55,6 +56,18 @@ module.exports = {
 			/*exclude: /\/node_modules\//,*/
 			include: __dirname + '/frontend',
       loader: 'babel-loader'
+		}, {
+			test:   /\.pug$/,
+			loader: "pug-loader"
+		}, {
+			test:   /\.styl$/,
+			loader: 'style-loader!css-loader!stylus-loader'
+		}, {
+			test:   /\.css$/,
+			loader: 'style-loader!css!autoprefixer?browsers=last 2 version!'
+		}, {
+			test:   /\.(png|jpg|svg|ttf|eot|woff|woff2)$/,
+			loader: 'file-loader?name=[path][name].[ext]'
     }],
 /* /\/node_modules\/(angular\/angular|jquery|...)/ */
 		noParse: wrapRegexp(/angular\/angular.js/, 'noParse')
