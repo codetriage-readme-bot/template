@@ -1,9 +1,12 @@
-var static = require('node-static');
-var file = new static.Server('./public');
+var static = require('node-static'),
+	file = new static.Server('./public'),
+	port = 3997;
+
+console.log(port);
 
 require('http').createServer(function (request, response) {
 	if (!/\./.test(request.url)) {
 		request.url = '/';
 	}
 	file.serve(request, response);
-}).listen(3997);
+}).listen(port);

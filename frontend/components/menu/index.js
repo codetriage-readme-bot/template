@@ -11,8 +11,10 @@ export default class Menu {
 
 		this.elem.innerHTML = template(options);
 
-		this.elem.querySelector('.title').onclick = () => {
-			this.elem.classList.toggle('open');
-		};
+		this.titleElem = this.elem.querySelector('.title');
+
+		this.titleElem.onclick = () => this.elem.classList.toggle('open');
+
+		this.titleElem.onmousedown = () => false;
 	}
 }

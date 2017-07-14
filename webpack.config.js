@@ -11,9 +11,6 @@ module.exports = {
 	},*/
 
 	entry: {
-/*		home: "./home",
-		about: "./about",
-    common: './common',*/
 		menu: './components/main',
     app: './javascript/app'
   },
@@ -61,14 +58,19 @@ module.exports = {
 			loader: "pug-loader"
 		}, {
 			test:   /\.styl$/,
-			loader: 'style-loader!css-loader!stylus-loader'
+			loader: 'style-loader!css-loader!stylus-loader?resolve url'
 		}, {
 			test:   /\.css$/,
 			loader: 'style-loader!css!autoprefixer?browsers=last 2 version!'
 		}, {
 			test:   /\.(png|jpg|svg|ttf|eot|woff|woff2)$/,
+			include: /\/node_modules\//,
+			loader: 'file-loader?name=[1].[ext]&regExp=node_modules/(.*)'
+    }, {
+			test:   /\.(png|jpg|svg|ttf|eot|woff|woff2)$/,
+			exclude: /\/node_modules\//,
 			loader: 'file-loader?name=[path][name].[ext]'
-    }],
+		}],
 /* /\/node_modules\/(angular\/angular|jquery|...)/ */
 		noParse: wrapRegexp(/angular\/angular.js/, 'noParse')
   },
