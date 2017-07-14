@@ -8,6 +8,7 @@
     "build": "browserify -t vueify -e template/vue/main.js -o template/javascript/modules/vue.js ",
     "start": "NODE_ENV=production webpack",
     "start:dev": "NODE_ENV=development webpack",
+    "start:dev:server": "NODE_ENV=development webpack-dev-server",
     "coveragenyc": "nyc --check-coverage --lines 100  --timeout 15000 npm run coverage",
     "lint": "eslint *.js tests",
     "test": "NODE_ENV=test mocha --compilers js:babel-register",
@@ -116,6 +117,7 @@
     "nodemon": "^1.10.0",
     "nyc": "^10.3.2",
     "supertest": "^3.0.0",
-    "toboggan": "^1.0.0"
+    "toboggan": "^1.0.0",
+    "webpack-dev-server": "^2.5.1"
   }
 }

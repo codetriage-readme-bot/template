@@ -97,6 +97,33 @@ module.exports = {
 		noParse: wrapRegexp(/angular\/angular.js/, 'noParse')
   },
 
+	devServer: {
+		contentBase: __dirname + '/backend', // static files, cwd() by default, false to disable
+		historyApiFallback: true // if static file not found, go /index.html
+		/*
+		 // middlware ->
+		 //   proxy ->
+		 //     historyApiFallback ? -> historyApiFallback, middleware
+		 //       -> contentBase
+		 proxy: [{ // array in proxy allows regexp path so using it
+		 path: "dynamic/* or /regexp/",
+		 host: "http://proxy.host", // if another HOST header needed for proxy,
+		 bypass: function(req, res, options) {
+		 // return URL to rewrite req.url and SKIP PROXY
+		 // return false otherwise
+		 },
+		 rewrite: function(req, options) {
+		 // do something with req if needed
+		 },
+		 configure: function(proxy) {
+		 // do something with http-proxy server instance if needed (add handlers etc)
+		 }
+		 }],
+		 contentBase: __dirname + '/backend', // static files, cwd() by default, false to disable
+		 historyApiFallback: true // if static file not found, go /index.html
+		 */
+	}
+
 	/* CDN require libs*/
 /*	externals: {
 		lodash: "_"

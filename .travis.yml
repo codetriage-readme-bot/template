@@ -16,4 +16,4 @@ before_script:
   - composer install
 script:
   - npm run coveragenyc
-  - php phpunit.phar ~template/spec
+  - php phpunit.phar ~template/spec/indexTest

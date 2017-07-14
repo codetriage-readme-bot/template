@@ -3,10 +3,10 @@
 import Menu from './menu';
 
 let pandaMenu = new Menu({
-	title: "MenuPanda",
+	title: "Menu",
 	items: [{
-		text: 'Eggs',
-		href: '#eggs'
+		text: 'First',
+		href: '#first'
 	}, {
 		text: 'Meat',
 		href: '#meat'
