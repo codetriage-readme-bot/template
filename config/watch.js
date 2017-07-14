@@ -1,9 +1,9 @@
 module.exports = {
   watch: {
     files: [
-      'template/*.html', 
-      'template/**/*/*.*', 
-      '!template/html/*.*'
+      'frontend/*.html',
+      'frontend/**/*/*.*',
+      '!frontend/html/*.*'
     ],
     tasks: [
       'pug', 

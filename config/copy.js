@@ -1,14 +1,14 @@
 module.exports = {
   main: {
     expand: true,
-    cwd: 'template/fonts/',
+    cwd: 'frontend/fonts/',
     src: '**',
     dest: 'assets/fonts',
   },
   
   video: {
     expand: true,
-    cwd: 'template/media/video/',
+    cwd: 'frontend/media/video/',
     src: '**',
     dest: 'assets/video',
   }

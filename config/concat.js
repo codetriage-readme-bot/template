@@ -1,9 +1,9 @@
 module.exports = {
   dist: {
     src: [
-      'template/javascript/pages/*.js',
-      'template/javascript/base/*.js', 
-      'template/javascript/modules/*.js', 
+      'frontend/javascript/pages/*.js',
+      'frontend/javascript/base/*.js',
+      'frontend/javascript/modules/*.js',
     ],
     dest: 'assets/js/build.js'
   },
@@ -27,7 +27,10 @@ module.exports = {
     dest: 'assets/css/all.min.css'
   },
   allJs: {
-    src: ['assets/js/libs.min.js', 'assets/js/build.min.js'],
+    src: [
+      'assets/js/libs.min.js',
+      'assets/js/build.min.js'
+    ],
     dest: 'assets/js/all.min.js'
   }
 };

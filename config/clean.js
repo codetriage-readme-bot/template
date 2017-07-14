@@ -1,3 +1,5 @@
 module.exports = {
-  clean: ['assets', 'index.php'],
+  clean: [
+    'assets'
+  ],
 };

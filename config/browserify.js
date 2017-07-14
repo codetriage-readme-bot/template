@@ -1,7 +1,11 @@
 module.exports = {
   dist: {
     files: {
-      'template/javascript/modules/vue.js': ['template/javascript/vue/main.js', 'template/javascript/vue/**/*.coffee']
+      'frontend/javascript/modules/vue.js':
+        [
+          'frontend/javascript/vue/main.js',
+          'frontend/javascript/vue/**/*.coffee'
+        ]
     },
     options: {
       transform: ['vueify']

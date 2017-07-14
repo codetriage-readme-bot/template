@@ -1,0 +1,19 @@
+sudo: required
+dist: trusty
+notifications:
+  email: false
+language: node_js
+node_js:
+  - 8.0.0
+php:
+  - 7.0
+services: mongodb
+env:
+  - NODE_PATH=.
+  - NODE_ENV=test
+before_script:
+  - phpenv global 7.0
+  - composer install
+script:
+  - npm run coveragenyc
+  - php phpunit.phar -c phpunit_config.xml

@@ -1,4 +1,44 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("h1 {\n  color: green;\n}")
+;(function(){
+'use strict';
+
+module.exports = {
+  data: function data() {
+    return {
+      greeting: 'Hello World'
+    };
+  }
+};
+})()
+if (module.exports.__esModule) module.exports = module.exports.default
+var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
+if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('h1',[_vm._v(_vm._s(_vm.greeting))])}
+__vue__options__.staticRenderFns = []
+if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  module.hot.dispose(__vueify_style_dispose__)
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-5d2f8b46", __vue__options__)
+  } else {
+    hotAPI.reload("data-v-5d2f8b46", __vue__options__)
+  }
+})()}
+},{"vue":5,"vue-hot-reload-api":4,"vueify/lib/insert-css":6}],2:[function(require,module,exports){
+var Vue = require('vue')
+var hello = require('./components/hello.vue')
+
+new Vue({
+  el: 'h2',
+  render: function(createElement) {
+    return createElement(hello)
+  }
+})
+
+},{"./components/hello.vue":1,"vue":5}],3:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -169,6 +209,10 @@ process.off = noop;
 process.removeListener = noop;
 process.removeAllListeners = noop;
 process.emit = noop;
+process.prependListener = noop;
+process.prependOnceListener = noop;
+
+process.listeners = function (name) { return [] }
 
 process.binding = function (name) {
     throw new Error('process.binding is not supported');
@@ -180,7 +224,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],2:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 var Vue // late bind
 var version
 var map = window.__VUE_HOT_MAP__ = Object.create(null)
@@ -326,7 +370,7 @@ exports.reload = tryWrap(function (id, options) {
   })
 })
 
-},{}],3:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 (function (process,global){
 /*!
  * Vue.js v2.3.4
@@ -7468,7 +7512,7 @@ setTimeout(function () {
 module.exports = Vue$3;
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":1}],4:[function(require,module,exports){
+},{"_process":3}],6:[function(require,module,exports){
 var inserted = exports.cache = {}
 
 function noop () {}
@@ -7493,44 +7537,4 @@ exports.insert = function (css) {
   }
 }
 
-},{}],5:[function(require,module,exports){
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("h1 {\n  color: green;\n}")
-;(function(){
-'use strict';
-
-module.exports = {
-  data: function data() {
-    return {
-      greeting: 'Hello World'
-    };
-  }
-};
-})()
-if (module.exports.__esModule) module.exports = module.exports.default
-var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
-if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('h1',[_vm._v(_vm._s(_vm.greeting))])}
-__vue__options__.staticRenderFns = []
-if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), true)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  module.hot.dispose(__vueify_style_dispose__)
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5e062bce", __vue__options__)
-  } else {
-    hotAPI.reload("data-v-5e062bce", __vue__options__)
-  }
-})()}
-},{"vue":3,"vue-hot-reload-api":2,"vueify/lib/insert-css":4}],6:[function(require,module,exports){
-var Vue = require('vue')
-var hello = require('./components/hello.vue')
-
-new Vue({
-  el: 'h2',
-  render: function(createElement) {
-    return createElement(hello)
-  }
-})
-
-},{"./components/hello.vue":5,"vue":3}]},{},[6]);
+},{}]},{},[2]);

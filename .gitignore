@@ -1,6 +1,10 @@
 # packs
-node_modules/*
-libs/*
+node_modules
+libs
 .sass-cache
-assets/*
-*.php
+assets
+.idea
+coverage
+.nyc_output
+/vendor/
+public
