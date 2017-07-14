@@ -3,7 +3,6 @@ node_modules
 libs
 .sass-cache
 assets
-*.php
 .idea
 coverage
 .nyc_output
