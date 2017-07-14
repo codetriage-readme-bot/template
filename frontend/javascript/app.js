@@ -22,8 +22,6 @@ try {
 
 if (handler) {
 	handler(function(route) {
-
 		route();
-
 	});
 }

@@ -1,13 +1,9 @@
 document.getElementById('loginButton').onclick = function() {
-		let login  = require('./login');
-
-		login();
-
+	let login  = require('./login');
+	login();
 };
 
 document.getElementById('logoutButton').onclick = function() {
-		let logout  = require('./logout');
-
-		logout();
-
+	let logout  = require('./logout');
+	logout();
 };
