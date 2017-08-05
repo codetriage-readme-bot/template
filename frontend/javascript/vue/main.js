@@ -3,7 +3,7 @@ var hello = require('./components/hello.vue')
 
 new Vue({
   el: 'h2',
-  render: function(createElement) {
+  render: function (createElement) {
     return createElement(hello)
   }
 })

@@ -4,24 +4,24 @@ module.exports = {
       data: {
         debug: false
       },
-      
+
       pretty: {
         type: true
       },
 
       filters: {
         php: function (text, attrs, ast) {
-          return '<?php ' + text + ' ?>';
+          return '<?php ' + text + ' ?>'
         }
       }
     },
     files: [
       {
-        src: "frontend/html/*.pug",
-        dest: "./",
+        src: 'frontend/html/*.pug',
+        dest: './',
         expand: true,
-        ext: ".html"
-      } 
+        ext: '.html'
+      }
     ]
   }
-};
+}

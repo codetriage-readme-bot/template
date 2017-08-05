@@ -6,7 +6,7 @@ module.exports = {
         'frontend/styles/sass/import/**/*.+(sass|scss)',
         '!frontend/styles/sass/import/styles.sass'
       ]
-    },
+    }
   },
   medias: {
     src: [
@@ -15,4 +15,4 @@ module.exports = {
     ],
     dest: 'frontend/styles/sass/media/medias.sass'
   }
-};
+}

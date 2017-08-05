@@ -16,4 +16,4 @@ module.exports = {
     ],
     dest: 'frontend/styles/less/media/medias.less'
   }
-};
+}

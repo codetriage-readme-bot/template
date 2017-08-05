@@ -3,13 +3,13 @@ module.exports = {
     expand: true,
     cwd: 'frontend/fonts/',
     src: '**',
-    dest: 'assets/fonts',
+    dest: 'assets/fonts'
   },
-  
+
   video: {
     expand: true,
     cwd: 'frontend/media/video/',
     src: '**',
-    dest: 'assets/video',
+    dest: 'assets/video'
   }
-};
+}

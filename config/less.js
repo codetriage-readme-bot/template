@@ -4,4 +4,4 @@ module.exports = {
       'assets/css/src/less.css': 'frontend/styles/less/main.less'
     }
   }
-};
+}

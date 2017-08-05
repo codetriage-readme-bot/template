@@ -3,7 +3,7 @@ module.exports = {
     src: [
       'frontend/javascript/pages/*.js',
       'frontend/javascript/base/*.js',
-      'frontend/javascript/modules/*.js',
+      'frontend/javascript/modules/*.js'
     ],
     dest: 'assets/js/build.js'
   },
@@ -15,14 +15,14 @@ module.exports = {
       'libs/slick-carousel/slick/slick.js',
       'libs/jquery-ui/jquery-ui.js',
       'libs/wow/dist/wow.js',
-      'libs/moment/moment.js',
+      'libs/moment/moment.js'
       // endbower
     ],
     dest: 'assets/js/libs.js'
   },
   libsCss: {
     src: [
-      'assets/css/*.min.css',
+      'assets/css/*.min.css'
     ],
     dest: 'assets/css/all.min.css'
   },
@@ -33,4 +33,4 @@ module.exports = {
     ],
     dest: 'assets/js/all.min.js'
   }
-};
+}

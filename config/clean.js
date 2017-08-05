@@ -1,5 +1,5 @@
 module.exports = {
   clean: [
     'assets'
-  ],
-};
+  ]
+}

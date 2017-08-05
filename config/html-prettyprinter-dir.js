@@ -1,11 +1,11 @@
-module.exports = {  
+module.exports = {
   custom: {
     src: [
       'frontend/html/*.html'
     ],
     dest: 'frontend/html/',
     options: {
-      indent_size: 1,
+      indent_size: 1
     }
   }
-};
+}

@@ -1,27 +1,27 @@
-'use strict';
+'use strict'
 
-import angular from 'angular';
+import angular from 'angular'
 
 let users = [
-	{id: "abcd", name: "vasya"},
-	{id: "defa", name: "Petya"},
-	{id: "1234", name: "Masha"}
-];
+	{id: 'abcd', name: 'vasya'},
+	{id: 'defa', name: 'Petya'},
+	{id: '1234', name: 'Masha'}
+]
 
-/*console.log(pluck(users, 'name'));*/
+/* console.log(pluck(users, 'name')); */
 
-let moduleName = location.pathname.slice(1);
+let moduleName = location.pathname.slice(1)
 
-let handler;
+let handler
 try {
-	let context = require.context('bundle-loader!./routes/', true, /^\.\//);
-	handler = context('./' + moduleName);
+  let context = require.context('bundle-loader!./routes/', true, /^\.\//)
+  handler = context('./' + moduleName)
 } catch (e) {
-	alert(e);
+  alert(e)
 }
 
 if (handler) {
-	handler(function(route) {
-		route();
-	});
+  handler(function (route) {
+    route()
+  })
 }

@@ -7,4 +7,4 @@ module.exports = {
     src: ['assets/js/libs.js'],
     dest: 'assets/js/libs.min.js'
   }
-};
+}

@@ -1,8 +1,8 @@
-'use strict';
+'use strict'
 
-module.exports = function() {
-	alert('home');
-};
+module.exports = function () {
+  alert('home')
+}
 /*
 import welcome from '../welcome';
 

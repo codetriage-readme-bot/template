@@ -16,12 +16,12 @@ module.exports = {
         cwd: 'frontend/styles/css',
         src: ['all.css'],
         dest: 'assets/css/src/',
-        expand: true},
+        expand: true}
     ],
     options: {
-      processContent: function(content, path) {
-        return content;
-      },
+      processContent: function (content, path) {
+        return content
+      }
     }
-  },
-};
+  }
+}

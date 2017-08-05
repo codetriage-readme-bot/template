@@ -4,7 +4,7 @@ module.exports = {
       'frontend/html/index.html'
     ],
     options: {
-      devDependencies: true,
+      devDependencies: true
     }
   },
   production: {
@@ -12,6 +12,6 @@ module.exports = {
     /* if ignore some library files add "main":["*.css", "*.js"] >> libsPath/bower.json */
       'config/cssmin.js',
       'config/concat.js'
-    ],
+    ]
   }
-};
+}

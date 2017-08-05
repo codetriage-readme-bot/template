@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Mifrill/template.svg?branch=master)](https://travis-ci.org/Mifrill/template)
 [![Quality](http://img.shields.io/codeclimate/github/Mifrill/template.svg)](https://codeclimate.com/github/Mifrill/template)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Coverage Status](https://img.shields.io/codeclimate/coverage/github/Mifrill/template.svg)](https://codeclimate.com/github/mifrill/template)
 [![codecov](https://codecov.io/gh/Mifrill/template/branch/master/graph/badge.svg)](https://codecov.io/gh/Mifrill/template)
 [![Dependency Status](https://gemnasium.com/badges/github.com/Mifrill/template.svg)](https://gemnasium.com/github.com/Mifrill/template)

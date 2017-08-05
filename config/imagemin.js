@@ -10,4 +10,4 @@ module.exports = {
       dest: 'assets/img/'
     }]
   }
-};
+}

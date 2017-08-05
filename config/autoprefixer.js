@@ -11,5 +11,5 @@ module.exports = {
     flatten: true,
     src: 'assets/css/src/**/*.css',
     dest: 'assets/css/src/'
-  },
-};
+  }
+}

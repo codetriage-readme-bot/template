@@ -6,6 +6,6 @@ module.exports = {
         'frontend/styles/css/**/*.css',
         '!frontend/styles/css/all.css'
       ]
-    },
+    }
   }
-};
+}
