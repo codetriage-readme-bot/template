@@ -18,10 +18,19 @@ module.exports = {
 /*	resolve: {
 		root: __dirname + '/vendor'
 	}, */
+/*
+  resolve: {
+    alias: {
+      'ngRoute': 'angular-route',
+      'ngResource': 'angular-resource'
+    }
+  },
+*/
 
   entry: {
     menu: './components/main',
     app: './javascript/app',
+    angular: './javascript/angular/controllers',
     auth: './javascript/auth'
   },
 
@@ -83,7 +92,7 @@ module.exports = {
       loader: 'style-loader!css-loader!stylus-loader?resolve url'
     }, {
       test: /\.css$/,
-      loader: 'style-loader!css!autoprefixer?browsers=last 2 version!'
+      loader: 'style-loader!css-loader!autoprefixer?browsers=last 2 version!'
     }, {
       test: /\.(png|jpg|svg|ttf|eot|woff|woff2)$/,
       include: /\/node_modules\//,

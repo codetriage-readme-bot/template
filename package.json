@@ -21,6 +21,8 @@
   "description": "Frontend template",
   "dependencies": {
     "angular": "^1.6.5",
+    "angular-resource": "^1.6.5",
+    "angular-route": "^1.6.5",
     "assets-webpack-plugin": "^3.5.1",
     "async": "^2.5.0",
     "babel-cli": "^6.24.1",
