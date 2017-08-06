@@ -1,7 +1,7 @@
 'use strict'
 
-import ngRoute from 'angular-route';
-import ngResource from 'angular-resource';
+import ngRoute from 'angular-route'
+import ngResource from 'angular-resource'
 
 /* Controllers */
 var phonecatApp = angular.module('phonecatApp', ['ngRoute', 'ngResource'])
