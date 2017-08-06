@@ -16,7 +16,7 @@ module.exports = {
     files: {
       'assets/css/libs.min.css': [
         // bower:css
-        'libs/bootstrap/dist/css/bootstrap.min.css',
+        'libs/bootstrap/dist/css/bootstrap.css',
         'libs/slick-carousel/slick/slick.css',
         'libs/animate.css/animate.css'
         // endbower
