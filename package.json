@@ -39,7 +39,7 @@
     "chalk": "^2.1.0",
     "css-loader": "^0.28.7",
     "del": "^3.0.0",
-    "eslint": "^4.7.1",
+    "eslint": "^4.7.2",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
     "grunt": "^1.0.1",
@@ -107,7 +107,7 @@
     "vue-template-compiler": "^2.4.4",
     "vueify": "^9.4.1",
     "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.8.2",
+    "webpack-dev-server": "^2.9.1",
     "wiredep": "^4.0.0"
   },
   "devDependencies": {
