@@ -2967,6 +2967,16 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
 
+edit-json-file@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/edit-json-file/-/edit-json-file-1.0.6.tgz#d3d050c3281f5688b86068df2ef5c998fbe975fb"
+  dependencies:
+    find-value "^1.0.3"
+    iterate-object "^1.3.2"
+    r-json "^1.2.5"
+    set-value "^0.4.0"
+    w-json "^1.3.5"
+
 editions@^1.1.1, editions@^1.3.3:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/editions/-/editions-1.3.3.tgz#0907101bdda20fac3cbe334c27cbd0688dc99a5b"
@@ -3952,6 +3962,10 @@ find-up@^2.0.0, find-up@^2.1.0:
   resolved "https://registry.yarnpkg.com/find-up/-/find-up-2.1.0.tgz#45d1b7e506c717ddd482775a2b77920a3c0c57a7"
   dependencies:
     locate-path "^2.0.0"
+
+find-value@^1.0.3:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/find-value/-/find-value-1.0.8.tgz#999eee602cd70bde0277c4fc6dfd9bda1ef34653"
 
 find-versions@^1.0.0:
   version "1.2.1"
@@ -6245,6 +6259,10 @@ istanbul@^1.1.0-alpha.1:
     nopt "3.x"
     which "^1.1.1"
     wordwrap "^1.0.0"
+
+iterate-object@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/iterate-object/-/iterate-object-1.3.2.tgz#24ec15affa5d0039e8839695a21c2cae1f45b66b"
 
 jit-grunt@~0.10.0:
   version "0.10.0"
@@ -9063,6 +9081,10 @@ quote-stream@~0.0.0:
     minimist "0.0.8"
     through2 "~0.4.1"
 
+r-json@^1.2.5:
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/r-json/-/r-json-1.2.8.tgz#7440560cc1edf00b9d8d94fa30bcad7dde94eae2"
+
 randomatic@^1.1.3:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/randomatic/-/randomatic-1.1.7.tgz#c7abe9cc8b87c0baa876b19fde83fd464797e38c"
@@ -9846,7 +9868,7 @@ set-immediate-shim@^1.0.0, set-immediate-shim@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/set-immediate-shim/-/set-immediate-shim-1.0.1.tgz#4b2b1b27eb808a9f8dcc481a58e5e56f599f3f61"
 
-set-value@^0.4.3:
+set-value@^0.4.0, set-value@^0.4.3:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/set-value/-/set-value-0.4.3.tgz#7db08f9d3d22dc7f78e53af3c3bf4666ecdfccf1"
   dependencies:
@@ -11665,6 +11687,10 @@ vueify@^9.4.1:
     vue-hot-reload-api "^2.0.1"
     vue-template-compiler "^2.0.0-alpha.8"
     vue-template-es2015-compiler "^1.2.2"
+
+w-json@^1.3.5:
+  version "1.3.8"
+  resolved "https://registry.yarnpkg.com/w-json/-/w-json-1.3.8.tgz#354363264001ee778e5b0404fb10b4c7f1c64b41"
 
 ware@^1.2.0:
   version "1.3.0"
