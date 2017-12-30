@@ -122,7 +122,7 @@
     "eslint-plugin-react": "^7.2.1",
     "flag-icon-css": "^2.8.0",
     "istanbul": "^1.1.0-alpha.1",
-    "mocha": "^3.5.0",
+    "mocha": "^4.1.0",
     "node-static": "^0.7.9",
     "nodemon": "^1.10.0",
     "nyc": "^11.1.0",
