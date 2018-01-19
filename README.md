@@ -12,3 +12,7 @@
 [![Code Triagers Badge](https://www.codetriage.com/mifrill/template/badges/users.svg)](https://www.codetriage.com/mifrill/template)
 
     Frontend template
+
+Rights
+
+    sudo chown -R username app_path
